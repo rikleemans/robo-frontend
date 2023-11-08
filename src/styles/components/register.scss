@@ -1,0 +1,35 @@
+.reg-page {
+  margin-bottom: 100px;
+  height: 100vh;
+  @keyframes register {
+    from {
+      transform: scale(2.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .reg-row {
+    height: 100%;
+    .reg-col {
+      max-width: 420px !important;
+      z-index: 1;
+
+      border-radius: 10px;
+      color: rgb(0, 0, 153);
+      .container {
+        animation: register 0.5s ease-in-out;
+      }
+      input {
+        border-radius: 8px !important;
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+        height: 50px;
+        border: none;
+        outline: none;
+        &::-webkit-input-placeholder {
+          color: rgb(0, 0, 153) !important;
+        }
+      }
+    }
+  }
+}

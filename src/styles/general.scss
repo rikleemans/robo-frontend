@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(245, 245, 245) !important;
+  position: relative;
+  transition: 0.4s;
+  overflow-x: hidden;
+}
+
+svg.curve {
+  z-index: -1;
+  path {
+    z-index: -1;
+  }
+}
+
+svg.background-curve {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  z-index: -1;
+}
+.dropdown-menu {
+  right: 0;
+  left: auto !important;
+}
+
+// Rabobank components
+.rabobank-footer {
+  background-color: #ff6600;
+  height: auto;
+  width: 100%;
+  height: 600px;
+}
+
+.rabobank-button {
+  background-color: #ff6600 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  height: 50px;
+  width: fit-content;
+  padding: 12px;
+  transition: 0.4s;
+  &:hover {
+    background-color: #df5900 !important;
+  }
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &:active {
+    background-color: #ff6600 !important;
+  }
+}
+
+.rabobank-link {
+  transition: 0.4s;
+  cursor: pointer;
+  color: #37c1ff;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+  &:hover {
+    color: #007db6;
+  }
+}
+
+.rabobank-logo {
+  cursor: pointer;
+}
+
+.rabobank-danger-transition {
+  border-radius: 8px !important;
+  text-align: center !important;
+}
+
+.about-us-page {
+  .aboutus-col {
+    min-height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 20px 0px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    z-index: 1;
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+  transition-duration: 0.3s;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dd5900;
+}
+
+.tooltip {
+  p {
+    text-align: left;
+    padding: 0 0 8px 0;
+    margin: 0;
+  }
+  &.left {
+  }
+}
+.ad {
+  padding: 0 !important;
+  border-radius: 8px;
+}
+.curve {
+  z-index: -1;
+  margin-top: -300px;
+  vertical-align: bottom;
+  &.rotated {
+    transform: rotate(180deg);
+    margin-top: -1px;
+  }
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  &.ad {
+    height: 500px;
+  }
+}
+.google-button {
+  margin-left: 16px;
+  border-radius: 10px !important;
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: white !important;
+  }
+  .curve {
+    margin-top: -200px;
+  }
+  .rabobank-button {
+    width: 100%;
+  }
+  .google-button {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+}

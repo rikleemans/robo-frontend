@@ -1,0 +1,80 @@
+.transition-enter {
+  opacity: 0;
+  transition: 1.5s;
+}
+.transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.transition-exit {
+  opacity: 1;
+  transition: 0.5s;
+}
+.transition-exit-active {
+  // transform: translate(0, 0);
+  // opacity: 0;
+  transition: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+.bounce {
+  outline: 0;
+  border-color: red;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
+}
+.loader {
+  transition: 0.4s;
+  margin: 0 auto;
+  border: 6px solid #ffffff;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+  96% {
+    transform: translateX(-2px);
+    timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

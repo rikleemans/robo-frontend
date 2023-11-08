@@ -1,0 +1,94 @@
+nav {
+  #logo {
+    height: 24px;
+  }
+
+  #menuIcon {
+    height: 20px;
+    padding-right: 10px;
+  }
+
+  #bellIcon {
+    width: 1.3vw;
+  }
+
+  #pfpIcon {
+    height: 24px;
+    margin-left: 5px;
+  }
+
+  #left-menu-dropdown {
+    margin-left: 1vw;
+  }
+
+  .dropdown button {
+    background-color: transparent;
+    border: transparent 0px;
+  }
+
+  .dropdown button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  #left-menu-dropdown .dropdown-item {
+    margin-left: 0px;
+  }
+  .UserSearch-bar__indicators {
+    display: none;
+  }
+  .UserSearch-bar {
+    min-width: 150px;
+    max-height: unset !important;
+  }
+  #profile-dropdown {
+    position: absolute;
+    text-decoration-color: black;
+    margin-left: 92.55vw;
+  }
+
+  #profile-dropdown button {
+    color: black;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+  .nav-links {
+    margin-left: 32px;
+    .rabobank-link {
+      padding: 0 8px;
+    }
+  }
+  .navbar {
+    z-index: 1;
+    #search-user-form {
+      position: absolute;
+      margin-left: 19.66vw;
+    }
+
+    #notifications-dropdown {
+      position: absolute;
+      margin-left: 86.7vw;
+      width: 13.3vw;
+    }
+
+    #notifications-dropdown .dropdown-toggle {
+      padding: 0px;
+      width: 1.3vw;
+      overflow: hidden;
+      margin-left: 2vw;
+    }
+
+    #notifications-dropdown .dropdown-menu {
+      padding-left: -6vw;
+    }
+
+    nav {
+      overflow: hidden;
+      text-align: center;
+    }
+  }
+}
+.rabobank-navbar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
